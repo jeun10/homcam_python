@@ -35,11 +35,11 @@ import urllib.request as req
 
 PROJECT_ID = "android-2305a"
 
-cred = credentials.Certificate("android-2305a-firebase-adminsdk-byvdg-c4ce48fb93.json") 
+cred = credentials.Certificate("firebase JSON") 
 
 firebase_admin.initialize_app(cred,{
 
-    'databaseURL':"https://android-2305a-default-rtdb.firebaseio.com/",
+    'databaseURL':"Firebase 주소",
 
     'storageBucket':f"{PROJECT_ID}.appspot.com"
 
@@ -49,15 +49,15 @@ firebase_admin.initialize_app(cred,{
 
 config={
 
-    "apiKey":"AIzaSyC05PYHgBAMyO62T2v6MRO_zIz9qHekz6o", # webkey
+    "apiKey":"WEBKEY", # webkey
 
-    "authDomain":"android-2305a", # projectID
+    "authDomain":"projectID", # projectID
 
-    "databaseURL":"https://android-2305a-default-rtdb.firebaseio.com/", 
+    "databaseURL":"DB URL", 
 
-    "storageBucket":"android-2305a.appspot.com/", # storageURL
+    "storageBucket":"storageURL", # storageURL
 
-    "serviceAccount":"android-2305a-firebase-adminsdk-byvdg-c4ce48fb93.json"
+    "serviceAccount":"json"
 
     }
 
@@ -95,7 +95,7 @@ def sendMessage(body, title):
 
     #print(ref.get())
 
-    APIKEY = "AAAAAlBp1w0:APA91bHuLtRtW4Wr9Deh942C6mpv6EaoOF7dtsd2psa_8Hj6WLwBfI8JgVvI8PmENYDY0wDjXHY-N7ZiPW2HGrHDP_b4yCf2ZIwKkguTc7VlUMSc972-4zpRQAqBFfvf3TwsD81fCMfZ"
+    APIKEY = "API KEY"
 
     TOKEN = str(ref.get())
 
